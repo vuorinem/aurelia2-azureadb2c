@@ -5,6 +5,8 @@
 <nav>
   <a goto="welcome">Welcome</a>
   <a goto="about">About</a>
+  <a href="#" if.bind="!auth.isAuthenticated" click.delegate="auth.login()">Login</a>
+  <a href="#" else click.delegate="auth.logout()">Logout (${auth.username})</a>
 </nav>
 
 <au-viewport default="welcome" fallback="missing"></au-viewport>
