@@ -8,6 +8,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@azure/msal-browser": "^2.1.0",
     "aurelia": "dev"
   },
   "devDependencies": {
