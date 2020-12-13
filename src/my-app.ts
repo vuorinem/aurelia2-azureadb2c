@@ -4,7 +4,7 @@ export class MyApp {
     constructor(private auth: AuthService) {
     }
 
-    async beforeBind(): Promise<void> {
+    async binding(): Promise<void> {
         await this.auth.initialize();
     }
 }

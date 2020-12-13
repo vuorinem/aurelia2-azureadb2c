@@ -1,15 +1,17 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 
 const cssLoader = 'css-loader';
 
+
 const postcssLoader = {
   loader: 'postcss-loader',
   options: {
-    plugins: () => [
-      require('autoprefixer')()
-    ]
+    postcssOptions: {
+      plugins: ['autoprefixer']
+    }
   }
 };
 
