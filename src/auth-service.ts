@@ -37,7 +37,7 @@ export class AuthService {
 
     public async login(): Promise<void> {
         const request = {
-            redirectUri: 'https://aurelia2-azureadb2c.azurewebsites.net',
+            redirectUri: window.location.origin,
             scopes: ['openid', 'profile'],
         } as RedirectRequest;
 
